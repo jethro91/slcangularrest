@@ -1,0 +1,26 @@
+{
+  "name": "bkmm-einventory",
+  "version": "0.0.1",
+  "authors": [
+    "jethro91 <jethrobhaskara91@gmail.com>"
+  ],
+  "keywords": [
+    "angular",
+    "node",
+    "strongloop"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-resource": "~1.3.0"
+  }
+}

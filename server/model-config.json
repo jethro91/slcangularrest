@@ -1,0 +1,52 @@
+{
+    "_meta": {
+        "sources": ["../common/models", "./models"]
+    },
+    "User": {
+        "dataSource": "db"
+    },
+    "AccessToken": {
+        "dataSource": "db",
+        "public": false
+    },
+    "ACL": {
+        "dataSource": "db",
+        "public": false
+    },
+    "RoleMapping": {
+        "dataSource": "db",
+        "public": false
+    },
+    "Role": {
+        "dataSource": "db",
+        "public": false
+    },
+    "Barang": {
+        "dataSource": "einventorydb",
+        "public": true
+    },
+    "BarangMasuk": {
+        "dataSource": "einventorydb",
+        "public": true
+    },
+    "KategoriBarang": {
+        "dataSource": "einventorydb",
+        "public": true
+    },
+    "Lokasi": {
+        "dataSource": "einventorydb",
+        "public": true
+    },
+    "PermintaanBarang": {
+        "dataSource": "einventorydb",
+        "public": true
+    },
+    "PindahBarang": {
+        "dataSource": "einventorydb",
+        "public": true
+    },
+    "RencanaPembelian": {
+        "dataSource": "einventorydb",
+        "public": true
+    }
+}

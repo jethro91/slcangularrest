@@ -1,0 +1,15 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "einventorydb": {
+        "name": "einventory",
+        "host": "192.168.99.100",
+        "port": 3306,
+        "database": "einventory",
+        "user": "einventory",
+        "password": "einventory",
+        "connector": "mysql"
+    }
+}
