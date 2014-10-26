@@ -1,5 +1,6 @@
 var App = angular.module('app', [
     'lbServices',
+    'generalFactory',
     'ui.router'
 ]);
 
@@ -18,6 +19,7 @@ App.config(['$stateProvider', '$urlRouterProvider',
                 url: "/home",
                 templateUrl: "views/home.html"
             })
+            // Kategori Barang
             .state('kategoriBarang', {
                 abstract: true,
                 url: "/kategori-barang",
@@ -43,7 +45,33 @@ App.config(['$stateProvider', '$urlRouterProvider',
                 url: "/edit/:id",
                 templateUrl: "views/kategoriBarang/edit.html",
                 controller: 'KategoriBarangEditCtrl'
-
+            })
+            // Barang
+            .state('barang', {
+                abstract: true,
+                url: "/barang",
+                templateUrl: "views/barang/index.html",
+                controller: 'BarangCtrl'
+            })
+            .state('barang.list', {
+                url: "/list",
+                templateUrl: "views/barang/list.html",
+                controller: 'BarangListCtrl'
+            })
+            .state('barang.new', {
+                url: "/new",
+                templateUrl: "views/barang/new.html",
+                controller: 'BarangCreateCtrl'
+            })
+            .state('barang.detail', {
+                url: "/detail/:id",
+                templateUrl: "views/barang/detail.html",
+                controller: 'BarangDetailCtrl'
+            })
+            .state('barang.edit', {
+                url: "/edit/:id",
+                templateUrl: "views/barang/edit.html",
+                controller: 'BarangEditCtrl'
             })
     }
 ]);

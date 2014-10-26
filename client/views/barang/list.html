@@ -1,0 +1,16 @@
+
+	<br>
+	<a ui-sref="barang.new">NEW</a>
+	<ul>
+		<li ng-repeat="value in listBarang">
+			Id: {{value.id}} <br>
+			Kategori Barang: {{getNamaKatBarang(value.idkategoribarang)}} <br>
+			Nama Barang: {{value.namabarang}} <br>
+			Stock Barang: {{value.stockbarang}} <br>
+			Spec Barang: {{value.specbarang}} <br>
+			Action: 
+			<button ng-click="detailView(value)">Detail</button>
+			<button ng-click="editView(value)">Edit</button>
+			<button ng-click="remove(value)">Delete</button>
+		</li>
+	</ul>
