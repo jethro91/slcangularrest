@@ -1,6 +1,10 @@
 <ul>
 	<li>
 		Kategori Barang: <input type="number" ng-model="newBarang.idkategoribarang"><br>
+		Select Kategori Barang: 
+		<select ng-model="newBarang.idkategoribarang" ng-options="obj.id as obj.namakategoribarang for obj in KatBarangs">
+      		<option value="">-- Select Kategori Barang --</option>
+    	</select><br>
 		Nama Barang: <input type="text" ng-model="newBarang.namabarang"> <br>
 		Stock Barang: <input type="number" ng-model="newBarang.stockbarang"><br>
 		Spec Barang: <input type="text" ng-model="newBarang.specbarang"><br>

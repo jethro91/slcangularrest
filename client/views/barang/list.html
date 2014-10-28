@@ -1,16 +1,21 @@
+Filter Kategori Barang:
+<select ng-model="filter.KatBarangs" ng-options="obj.id as obj.namakategoribarang for obj in KatBarangs">
+    <option value="">-- ALL --</option>
+</select>
+<button ng-click="getList()">FILTER</button>
 
-	<br>
-	<a ui-sref="barang.new">NEW</a>
-	<ul>
-		<li ng-repeat="value in listBarang">
-			Id: {{value.id}} <br>
-			Kategori Barang: {{getNamaKatBarang(value.idkategoribarang)}} <br>
-			Nama Barang: {{value.namabarang}} <br>
-			Stock Barang: {{value.stockbarang}} <br>
-			Spec Barang: {{value.specbarang}} <br>
-			Action: 
-			<button ng-click="detailView(value)">Detail</button>
-			<button ng-click="editView(value)">Edit</button>
-			<button ng-click="remove(value)">Delete</button>
-		</li>
-	</ul>
+<br>
+<a ui-sref="barang.new">NEW</a>
+<ul>
+    <li ng-repeat="value in listBarang">
+        Id: {{value.id}}
+        <br>Kategori Barang: {{value.kategoriBarang.namakategoribarang}}
+        <br>Nama Barang: {{value.namabarang}}
+        <br>Stock Barang: {{value.stockbarang}}
+        <br>Spec Barang: {{value.specbarang}}
+        <br>Action:
+        <button ng-click="detailView(value)">Detail</button>
+        <button ng-click="editView(value)">Edit</button>
+        <button ng-click="remove(value)">Delete</button>
+    </li>
+</ul>

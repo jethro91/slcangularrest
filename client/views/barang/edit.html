@@ -2,7 +2,7 @@
 	<li>
 		id: <input type="text" ng-model="editBarang.id" disabled> <br>
 		Select Kategori Barang: 
-		<select ng-model="editBarang.idkategoribarang" ng-options="obj.id as obj.nama for obj in KatBarangs()">
+		<select ng-model="editBarang.idkategoribarang" ng-options="obj.id as obj.namakategoribarang for obj in KatBarangs">
       		<option value="">-- Select Kategori Barang --</option>
     	</select><br>
 		Nama Barang: <input type="text" ng-model="editBarang.namabarang"> <br>

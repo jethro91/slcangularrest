@@ -15,7 +15,7 @@ generalFactory.factory('KatBarangFac', ['KategoriBarang',
                         }
 
                     });
-                    console.log(katBarangArr);
+             
                     if(cb){
                     	cb();
                     }

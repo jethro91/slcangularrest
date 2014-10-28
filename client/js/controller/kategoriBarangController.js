@@ -17,8 +17,8 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
         // get List
         function getList() {
             KategoriBarang.find()
-                .$promise.then(function(results) {
-                    $scope.listKategoriBarang = results;
+                .$promise.then(function(res) {
+                    $scope.listKategoriBarang = res;
                 }, function(err) {
                     console.log(err.status + ' ' + err.statusText);
                 });
@@ -28,7 +28,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
         $scope.detailView = function(selected) {
 
             KategoriBarang.exists(selected)
-                .$promise.then(function(results) {
+                .$promise.then(function(res) {
                     $state.go('kategoriBarang.detail', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
@@ -40,7 +40,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
         $scope.editView = function(selected) {
             KategoriBarang
                 .exists(selected)
-                .$promise.then(function(results) {
+                .$promise.then(function(res) {
                     $state.go('kategoriBarang.edit', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
@@ -74,7 +74,7 @@ App.controller('KategoriBarangCreateCtrl', ['$scope', '$state', 'KategoriBarang'
         $scope.create = function() {
             KategoriBarang
                 .create($scope.newKategoriBarang)
-                .$promise.then(function(results) {
+                .$promise.then(function(res) {
                     $scope.newKategoriBarang = {};
                     $state.go('kategoriBarang.list');
                 }, function(err) {
@@ -91,8 +91,8 @@ App.controller('KategoriBarangDetailCtrl', ['$scope', '$state', '$stateParams', 
         $scope.pages.subtitle = 'Detail';
         KategoriBarang
             .findById($stateParams)
-            .$promise.then(function(results) {
-                $scope.detailKategoriBarang = results;
+            .$promise.then(function(res) {
+                $scope.detailKategoriBarang = res;
             }, function(err) {
                 alert(err.status + ' ' + err.statusText);
             });
@@ -106,15 +106,15 @@ App.controller('KategoriBarangEditCtrl', ['$scope', '$state', '$stateParams', 'K
         $scope.editKategoriBarang = {};
         KategoriBarang
             .findById($stateParams)
-            .$promise.then(function(results) {
-                $scope.editKategoriBarang = results;
+            .$promise.then(function(res) {
+                $scope.editKategoriBarang = res;
             }, function(err) {
                 alert(err.status + ' ' + err.statusText);
             });
         $scope.update = function() {
             KategoriBarang
                 .prototype$updateAttributes($scope.editKategoriBarang)
-                .$promise.then(function(results) {
+                .$promise.then(function(res) {
                     $scope.editKategoriBarang = {};
                     $state.go('kategoriBarang.list');
                 }, function(err) {

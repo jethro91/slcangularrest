@@ -1035,6 +1035,184 @@ module.factory(
       { 'id': '@id' },
       {
 
+        // INTERNAL. Use Barang.barangMasuk.findById() instead.
+        "prototype$__findById__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.destroyById() instead.
+        "prototype$__destroyById__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.updateById() instead.
+        "prototype$__updateById__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.kategoriBarang() instead.
+        "prototype$__get__kategoriBarang": {
+          url: urlBase + "/Barangs/:id/kategoriBarang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.findById() instead.
+        "prototype$__findById__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.destroyById() instead.
+        "prototype$__destroyById__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.updateById() instead.
+        "prototype$__updateById__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.findById() instead.
+        "prototype$__findById__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.destroyById() instead.
+        "prototype$__destroyById__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.updateById() instead.
+        "prototype$__updateById__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.findById() instead.
+        "prototype$__findById__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.destroyById() instead.
+        "prototype$__destroyById__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.updateById() instead.
+        "prototype$__updateById__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk() instead.
+        "prototype$__get__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.create() instead.
+        "prototype$__create__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.destroyAll() instead.
+        "prototype$__delete__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.count() instead.
+        "prototype$__count__barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang() instead.
+        "prototype$__get__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.create() instead.
+        "prototype$__create__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.destroyAll() instead.
+        "prototype$__delete__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.count() instead.
+        "prototype$__count__permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang() instead.
+        "prototype$__get__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.create() instead.
+        "prototype$__create__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.destroyAll() instead.
+        "prototype$__delete__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.count() instead.
+        "prototype$__count__pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian() instead.
+        "prototype$__get__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.create() instead.
+        "prototype$__create__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.destroyAll() instead.
+        "prototype$__delete__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.count() instead.
+        "prototype$__count__rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/count",
+          method: "GET",
+        },
+
         /**
          * @ngdoc method
          * @name lbServices.Barang#create
@@ -1375,6 +1553,73 @@ module.factory(
           url: urlBase + "/Barangs/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use BarangMasuk.barang() instead.
+        "::get::BarangMasuk::barang": {
+          url: urlBase + "/BarangMasuks/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.findById() instead.
+        "::findById::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.destroyById() instead.
+        "::destroyById::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.updateById() instead.
+        "::updateById::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang() instead.
+        "::get::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.create() instead.
+        "::create::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.destroyAll() instead.
+        "::delete::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.count() instead.
+        "::count::KategoriBarang::barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.barang() instead.
+        "::get::PermintaanBarang::barang": {
+          url: urlBase + "/PermintaanBarangs/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.barang() instead.
+        "::get::PindahBarang::barang": {
+          url: urlBase + "/PindahBarangs/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use RencanaPembelian.barang() instead.
+        "::get::RencanaPembelian::barang": {
+          url: urlBase + "/RencanaPembelians/:id/barang",
+          method: "GET",
+        },
       }
     );
 
@@ -1501,6 +1746,1098 @@ module.factory(
         R["removeById"] = R["deleteById"];
 
 
+    /**
+     * @ngdoc object
+     * @name lbServices.Barang.barangMasuk
+     * @object
+     * @description
+     *
+     * The object `Barang.barangMasuk` groups methods
+     * manipulating `BarangMasuk` instances related to `Barang`.
+     *
+     * Use {@link lbServices.Barang#barangMasuk} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang#barangMasuk
+         * @methodOf lbServices.Barang
+         *
+         * @description
+         *
+         * Queries barangMasuk of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::get::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.barangMasuk#count
+         * @methodOf lbServices.Barang.barangMasuk
+         *
+         * @description
+         *
+         * Counts barangMasuk of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.barangMasuk.count = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::count::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.barangMasuk#create
+         * @methodOf lbServices.Barang.barangMasuk
+         *
+         * @description
+         *
+         * Creates a new instance in barangMasuk of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk.create = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::create::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.barangMasuk#destroyAll
+         * @methodOf lbServices.Barang.barangMasuk
+         *
+         * @description
+         *
+         * Deletes all barangMasuk of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.barangMasuk.destroyAll = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::delete::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.barangMasuk#destroyById
+         * @methodOf lbServices.Barang.barangMasuk
+         *
+         * @description
+         *
+         * Delete a related item by id for barangMasuk
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barangMasuk
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.barangMasuk.destroyById = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::destroyById::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.barangMasuk#findById
+         * @methodOf lbServices.Barang.barangMasuk
+         *
+         * @description
+         *
+         * Find a related item by id for barangMasuk
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barangMasuk
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk.findById = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::findById::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.barangMasuk#updateById
+         * @methodOf lbServices.Barang.barangMasuk
+         *
+         * @description
+         *
+         * Update a related item by id for barangMasuk
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barangMasuk
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk.updateById = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::updateById::Barang::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang#kategoriBarang
+         * @methodOf lbServices.Barang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation kategoriBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `KategoriBarang` object.)
+         * </em>
+         */
+        R.kategoriBarang = function() {
+          var TargetResource = $injector.get("KategoriBarang");
+          var action = TargetResource["::get::Barang::kategoriBarang"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.Barang.permintaanBarang
+     * @object
+     * @description
+     *
+     * The object `Barang.permintaanBarang` groups methods
+     * manipulating `PermintaanBarang` instances related to `Barang`.
+     *
+     * Use {@link lbServices.Barang#permintaanBarang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang#permintaanBarang
+         * @methodOf lbServices.Barang
+         *
+         * @description
+         *
+         * Queries permintaanBarang of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::get::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.permintaanBarang#count
+         * @methodOf lbServices.Barang.permintaanBarang
+         *
+         * @description
+         *
+         * Counts permintaanBarang of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.permintaanBarang.count = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::count::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.permintaanBarang#create
+         * @methodOf lbServices.Barang.permintaanBarang
+         *
+         * @description
+         *
+         * Creates a new instance in permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.create = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::create::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.permintaanBarang#destroyAll
+         * @methodOf lbServices.Barang.permintaanBarang
+         *
+         * @description
+         *
+         * Deletes all permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.permintaanBarang.destroyAll = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::delete::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.permintaanBarang#destroyById
+         * @methodOf lbServices.Barang.permintaanBarang
+         *
+         * @description
+         *
+         * Delete a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.permintaanBarang.destroyById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::destroyById::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.permintaanBarang#findById
+         * @methodOf lbServices.Barang.permintaanBarang
+         *
+         * @description
+         *
+         * Find a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.findById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::findById::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.permintaanBarang#updateById
+         * @methodOf lbServices.Barang.permintaanBarang
+         *
+         * @description
+         *
+         * Update a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.updateById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::updateById::Barang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.Barang.pindahBarang
+     * @object
+     * @description
+     *
+     * The object `Barang.pindahBarang` groups methods
+     * manipulating `PindahBarang` instances related to `Barang`.
+     *
+     * Use {@link lbServices.Barang#pindahBarang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang#pindahBarang
+         * @methodOf lbServices.Barang
+         *
+         * @description
+         *
+         * Queries pindahBarang of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::get::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.pindahBarang#count
+         * @methodOf lbServices.Barang.pindahBarang
+         *
+         * @description
+         *
+         * Counts pindahBarang of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.pindahBarang.count = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::count::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.pindahBarang#create
+         * @methodOf lbServices.Barang.pindahBarang
+         *
+         * @description
+         *
+         * Creates a new instance in pindahBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang.create = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::create::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.pindahBarang#destroyAll
+         * @methodOf lbServices.Barang.pindahBarang
+         *
+         * @description
+         *
+         * Deletes all pindahBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.pindahBarang.destroyAll = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::delete::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.pindahBarang#destroyById
+         * @methodOf lbServices.Barang.pindahBarang
+         *
+         * @description
+         *
+         * Delete a related item by id for pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for pindahBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.pindahBarang.destroyById = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::destroyById::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.pindahBarang#findById
+         * @methodOf lbServices.Barang.pindahBarang
+         *
+         * @description
+         *
+         * Find a related item by id for pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for pindahBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang.findById = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::findById::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.pindahBarang#updateById
+         * @methodOf lbServices.Barang.pindahBarang
+         *
+         * @description
+         *
+         * Update a related item by id for pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for pindahBarang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang.updateById = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::updateById::Barang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.Barang.rencanaPembelian
+     * @object
+     * @description
+     *
+     * The object `Barang.rencanaPembelian` groups methods
+     * manipulating `RencanaPembelian` instances related to `Barang`.
+     *
+     * Use {@link lbServices.Barang#rencanaPembelian} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang#rencanaPembelian
+         * @methodOf lbServices.Barang
+         *
+         * @description
+         *
+         * Queries rencanaPembelian of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `RencanaPembelian` object.)
+         * </em>
+         */
+        R.rencanaPembelian = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::get::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.rencanaPembelian#count
+         * @methodOf lbServices.Barang.rencanaPembelian
+         *
+         * @description
+         *
+         * Counts rencanaPembelian of Barang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.rencanaPembelian.count = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::count::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.rencanaPembelian#create
+         * @methodOf lbServices.Barang.rencanaPembelian
+         *
+         * @description
+         *
+         * Creates a new instance in rencanaPembelian of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `RencanaPembelian` object.)
+         * </em>
+         */
+        R.rencanaPembelian.create = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::create::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.rencanaPembelian#destroyAll
+         * @methodOf lbServices.Barang.rencanaPembelian
+         *
+         * @description
+         *
+         * Deletes all rencanaPembelian of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.rencanaPembelian.destroyAll = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::delete::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.rencanaPembelian#destroyById
+         * @methodOf lbServices.Barang.rencanaPembelian
+         *
+         * @description
+         *
+         * Delete a related item by id for rencanaPembelian
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for rencanaPembelian
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.rencanaPembelian.destroyById = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::destroyById::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.rencanaPembelian#findById
+         * @methodOf lbServices.Barang.rencanaPembelian
+         *
+         * @description
+         *
+         * Find a related item by id for rencanaPembelian
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for rencanaPembelian
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `RencanaPembelian` object.)
+         * </em>
+         */
+        R.rencanaPembelian.findById = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::findById::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Barang.rencanaPembelian#updateById
+         * @methodOf lbServices.Barang.rencanaPembelian
+         *
+         * @description
+         *
+         * Update a related item by id for rencanaPembelian
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for rencanaPembelian
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `RencanaPembelian` object.)
+         * </em>
+         */
+        R.rencanaPembelian.updateById = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::updateById::Barang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
 
     /**
     * @ngdoc property
@@ -1538,6 +2875,18 @@ module.factory(
       urlBase + "/BarangMasuks/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use BarangMasuk.barang() instead.
+        "prototype$__get__barang": {
+          url: urlBase + "/BarangMasuks/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use BarangMasuk.lokasi() instead.
+        "prototype$__get__lokasi": {
+          url: urlBase + "/BarangMasuks/:id/lokasi",
+          method: "GET",
+        },
 
         /**
          * @ngdoc method
@@ -1879,6 +3228,92 @@ module.factory(
           url: urlBase + "/BarangMasuks/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use Barang.barangMasuk.findById() instead.
+        "::findById::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.destroyById() instead.
+        "::destroyById::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.updateById() instead.
+        "::updateById::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk() instead.
+        "::get::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.create() instead.
+        "::create::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.destroyAll() instead.
+        "::delete::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.barangMasuk.count() instead.
+        "::count::Barang::barangMasuk": {
+          url: urlBase + "/Barangs/:id/barangMasuk/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.findById() instead.
+        "::findById::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.destroyById() instead.
+        "::destroyById::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.updateById() instead.
+        "::updateById::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk() instead.
+        "::get::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.create() instead.
+        "::create::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.destroyAll() instead.
+        "::delete::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.count() instead.
+        "::count::Lokasi::barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/count",
+          method: "GET",
+        },
       }
     );
 
@@ -2006,6 +3441,78 @@ module.factory(
 
 
 
+        /**
+         * @ngdoc method
+         * @name lbServices.BarangMasuk#barang
+         * @methodOf lbServices.BarangMasuk
+         *
+         * @description
+         *
+         * Fetches belongsTo relation barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::get::BarangMasuk::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.BarangMasuk#lokasi
+         * @methodOf lbServices.BarangMasuk
+         *
+         * @description
+         *
+         * Fetches belongsTo relation lokasi
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Lokasi` object.)
+         * </em>
+         */
+        R.lokasi = function() {
+          var TargetResource = $injector.get("Lokasi");
+          var action = TargetResource["::get::BarangMasuk::lokasi"];
+          return action.apply(R, arguments);
+        };
+
     /**
     * @ngdoc property
     * @name lbServices.BarangMasuk#modelName
@@ -2042,6 +3549,49 @@ module.factory(
       urlBase + "/KategoriBarangs/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use KategoriBarang.barang.findById() instead.
+        "prototype$__findById__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.destroyById() instead.
+        "prototype$__destroyById__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.updateById() instead.
+        "prototype$__updateById__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang() instead.
+        "prototype$__get__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.create() instead.
+        "prototype$__create__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.destroyAll() instead.
+        "prototype$__delete__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use KategoriBarang.barang.count() instead.
+        "prototype$__count__barang": {
+          url: urlBase + "/KategoriBarangs/:id/barang/count",
+          method: "GET",
+        },
 
         /**
          * @ngdoc method
@@ -2383,6 +3933,12 @@ module.factory(
           url: urlBase + "/KategoriBarangs/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use Barang.kategoriBarang() instead.
+        "::get::Barang::kategoriBarang": {
+          url: urlBase + "/Barangs/:id/kategoriBarang",
+          method: "GET",
+        },
       }
     );
 
@@ -2509,6 +4065,270 @@ module.factory(
         R["removeById"] = R["deleteById"];
 
 
+    /**
+     * @ngdoc object
+     * @name lbServices.KategoriBarang.barang
+     * @object
+     * @description
+     *
+     * The object `KategoriBarang.barang` groups methods
+     * manipulating `Barang` instances related to `KategoriBarang`.
+     *
+     * Use {@link lbServices.KategoriBarang#barang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang#barang
+         * @methodOf lbServices.KategoriBarang
+         *
+         * @description
+         *
+         * Queries barang of KategoriBarang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::get::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang.barang#count
+         * @methodOf lbServices.KategoriBarang.barang
+         *
+         * @description
+         *
+         * Counts barang of KategoriBarang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.barang.count = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::count::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang.barang#create
+         * @methodOf lbServices.KategoriBarang.barang
+         *
+         * @description
+         *
+         * Creates a new instance in barang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang.create = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::create::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang.barang#destroyAll
+         * @methodOf lbServices.KategoriBarang.barang
+         *
+         * @description
+         *
+         * Deletes all barang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.barang.destroyAll = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::delete::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang.barang#destroyById
+         * @methodOf lbServices.KategoriBarang.barang
+         *
+         * @description
+         *
+         * Delete a related item by id for barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.barang.destroyById = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::destroyById::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang.barang#findById
+         * @methodOf lbServices.KategoriBarang.barang
+         *
+         * @description
+         *
+         * Find a related item by id for barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang.findById = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::findById::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.KategoriBarang.barang#updateById
+         * @methodOf lbServices.KategoriBarang.barang
+         *
+         * @description
+         *
+         * Update a related item by id for barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang.updateById = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::updateById::KategoriBarang::barang"];
+          return action.apply(R, arguments);
+        };
 
     /**
     * @ngdoc property
@@ -2546,6 +4366,135 @@ module.factory(
       urlBase + "/Lokasis/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use Lokasi.barangMasuk.findById() instead.
+        "prototype$__findById__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.destroyById() instead.
+        "prototype$__destroyById__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.updateById() instead.
+        "prototype$__updateById__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.findById() instead.
+        "prototype$__findById__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.destroyById() instead.
+        "prototype$__destroyById__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.updateById() instead.
+        "prototype$__updateById__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.findById() instead.
+        "prototype$__findById__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.destroyById() instead.
+        "prototype$__destroyById__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.updateById() instead.
+        "prototype$__updateById__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk() instead.
+        "prototype$__get__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.create() instead.
+        "prototype$__create__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.destroyAll() instead.
+        "prototype$__delete__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.barangMasuk.count() instead.
+        "prototype$__count__barangMasuk": {
+          url: urlBase + "/Lokasis/:id/barangMasuk/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang() instead.
+        "prototype$__get__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.create() instead.
+        "prototype$__create__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.destroyAll() instead.
+        "prototype$__delete__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.count() instead.
+        "prototype$__count__permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang() instead.
+        "prototype$__get__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.create() instead.
+        "prototype$__create__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.destroyAll() instead.
+        "prototype$__delete__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.count() instead.
+        "prototype$__count__pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/count",
+          method: "GET",
+        },
 
         /**
          * @ngdoc method
@@ -2887,6 +4836,24 @@ module.factory(
           url: urlBase + "/Lokasis/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use BarangMasuk.lokasi() instead.
+        "::get::BarangMasuk::lokasi": {
+          url: urlBase + "/BarangMasuks/:id/lokasi",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.lokasi() instead.
+        "::get::PermintaanBarang::lokasi": {
+          url: urlBase + "/PermintaanBarangs/:id/lokasi",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.lokasi() instead.
+        "::get::PindahBarang::lokasi": {
+          url: urlBase + "/PindahBarangs/:id/lokasi",
+          method: "GET",
+        },
       }
     );
 
@@ -3013,6 +4980,798 @@ module.factory(
         R["removeById"] = R["deleteById"];
 
 
+    /**
+     * @ngdoc object
+     * @name lbServices.Lokasi.barangMasuk
+     * @object
+     * @description
+     *
+     * The object `Lokasi.barangMasuk` groups methods
+     * manipulating `BarangMasuk` instances related to `Lokasi`.
+     *
+     * Use {@link lbServices.Lokasi#barangMasuk} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi#barangMasuk
+         * @methodOf lbServices.Lokasi
+         *
+         * @description
+         *
+         * Queries barangMasuk of Lokasi.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::get::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.barangMasuk#count
+         * @methodOf lbServices.Lokasi.barangMasuk
+         *
+         * @description
+         *
+         * Counts barangMasuk of Lokasi.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.barangMasuk.count = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::count::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.barangMasuk#create
+         * @methodOf lbServices.Lokasi.barangMasuk
+         *
+         * @description
+         *
+         * Creates a new instance in barangMasuk of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk.create = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::create::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.barangMasuk#destroyAll
+         * @methodOf lbServices.Lokasi.barangMasuk
+         *
+         * @description
+         *
+         * Deletes all barangMasuk of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.barangMasuk.destroyAll = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::delete::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.barangMasuk#destroyById
+         * @methodOf lbServices.Lokasi.barangMasuk
+         *
+         * @description
+         *
+         * Delete a related item by id for barangMasuk
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barangMasuk
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.barangMasuk.destroyById = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::destroyById::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.barangMasuk#findById
+         * @methodOf lbServices.Lokasi.barangMasuk
+         *
+         * @description
+         *
+         * Find a related item by id for barangMasuk
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barangMasuk
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk.findById = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::findById::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.barangMasuk#updateById
+         * @methodOf lbServices.Lokasi.barangMasuk
+         *
+         * @description
+         *
+         * Update a related item by id for barangMasuk
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for barangMasuk
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `BarangMasuk` object.)
+         * </em>
+         */
+        R.barangMasuk.updateById = function() {
+          var TargetResource = $injector.get("BarangMasuk");
+          var action = TargetResource["::updateById::Lokasi::barangMasuk"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.Lokasi.permintaanBarang
+     * @object
+     * @description
+     *
+     * The object `Lokasi.permintaanBarang` groups methods
+     * manipulating `PermintaanBarang` instances related to `Lokasi`.
+     *
+     * Use {@link lbServices.Lokasi#permintaanBarang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi#permintaanBarang
+         * @methodOf lbServices.Lokasi
+         *
+         * @description
+         *
+         * Queries permintaanBarang of Lokasi.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::get::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.permintaanBarang#count
+         * @methodOf lbServices.Lokasi.permintaanBarang
+         *
+         * @description
+         *
+         * Counts permintaanBarang of Lokasi.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.permintaanBarang.count = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::count::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.permintaanBarang#create
+         * @methodOf lbServices.Lokasi.permintaanBarang
+         *
+         * @description
+         *
+         * Creates a new instance in permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.create = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::create::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.permintaanBarang#destroyAll
+         * @methodOf lbServices.Lokasi.permintaanBarang
+         *
+         * @description
+         *
+         * Deletes all permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.permintaanBarang.destroyAll = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::delete::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.permintaanBarang#destroyById
+         * @methodOf lbServices.Lokasi.permintaanBarang
+         *
+         * @description
+         *
+         * Delete a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.permintaanBarang.destroyById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::destroyById::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.permintaanBarang#findById
+         * @methodOf lbServices.Lokasi.permintaanBarang
+         *
+         * @description
+         *
+         * Find a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.findById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::findById::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.permintaanBarang#updateById
+         * @methodOf lbServices.Lokasi.permintaanBarang
+         *
+         * @description
+         *
+         * Update a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.updateById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::updateById::Lokasi::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.Lokasi.pindahBarang
+     * @object
+     * @description
+     *
+     * The object `Lokasi.pindahBarang` groups methods
+     * manipulating `PindahBarang` instances related to `Lokasi`.
+     *
+     * Use {@link lbServices.Lokasi#pindahBarang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi#pindahBarang
+         * @methodOf lbServices.Lokasi
+         *
+         * @description
+         *
+         * Queries pindahBarang of Lokasi.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::get::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.pindahBarang#count
+         * @methodOf lbServices.Lokasi.pindahBarang
+         *
+         * @description
+         *
+         * Counts pindahBarang of Lokasi.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.pindahBarang.count = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::count::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.pindahBarang#create
+         * @methodOf lbServices.Lokasi.pindahBarang
+         *
+         * @description
+         *
+         * Creates a new instance in pindahBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang.create = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::create::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.pindahBarang#destroyAll
+         * @methodOf lbServices.Lokasi.pindahBarang
+         *
+         * @description
+         *
+         * Deletes all pindahBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.pindahBarang.destroyAll = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::delete::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.pindahBarang#destroyById
+         * @methodOf lbServices.Lokasi.pindahBarang
+         *
+         * @description
+         *
+         * Delete a related item by id for pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for pindahBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.pindahBarang.destroyById = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::destroyById::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.pindahBarang#findById
+         * @methodOf lbServices.Lokasi.pindahBarang
+         *
+         * @description
+         *
+         * Find a related item by id for pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for pindahBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang.findById = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::findById::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Lokasi.pindahBarang#updateById
+         * @methodOf lbServices.Lokasi.pindahBarang
+         *
+         * @description
+         *
+         * Update a related item by id for pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for pindahBarang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang.updateById = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::updateById::Lokasi::pindahBarang"];
+          return action.apply(R, arguments);
+        };
 
     /**
     * @ngdoc property
@@ -3050,6 +5809,30 @@ module.factory(
       urlBase + "/PermintaanBarangs/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use PermintaanBarang.barang() instead.
+        "prototype$__get__barang": {
+          url: urlBase + "/PermintaanBarangs/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.lokasi() instead.
+        "prototype$__get__lokasi": {
+          url: urlBase + "/PermintaanBarangs/:id/lokasi",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.pindahBarang() instead.
+        "prototype$__get__pindahBarang": {
+          url: urlBase + "/PermintaanBarangs/:id/pindahBarang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.rencanaPembelian() instead.
+        "prototype$__get__rencanaPembelian": {
+          url: urlBase + "/PermintaanBarangs/:id/rencanaPembelian",
+          method: "GET",
+        },
 
         /**
          * @ngdoc method
@@ -3391,6 +6174,178 @@ module.factory(
           url: urlBase + "/PermintaanBarangs/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use Barang.permintaanBarang.findById() instead.
+        "::findById::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.destroyById() instead.
+        "::destroyById::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.updateById() instead.
+        "::updateById::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang() instead.
+        "::get::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.create() instead.
+        "::create::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.destroyAll() instead.
+        "::delete::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.permintaanBarang.count() instead.
+        "::count::Barang::permintaanBarang": {
+          url: urlBase + "/Barangs/:id/permintaanBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.findById() instead.
+        "::findById::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.destroyById() instead.
+        "::destroyById::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.updateById() instead.
+        "::updateById::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang() instead.
+        "::get::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.create() instead.
+        "::create::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.destroyAll() instead.
+        "::delete::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.permintaanBarang.count() instead.
+        "::count::Lokasi::permintaanBarang": {
+          url: urlBase + "/Lokasis/:id/permintaanBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.findById() instead.
+        "::findById::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.destroyById() instead.
+        "::destroyById::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.updateById() instead.
+        "::updateById::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang() instead.
+        "::get::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.create() instead.
+        "::create::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.destroyAll() instead.
+        "::delete::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.count() instead.
+        "::count::PindahBarang::permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.findById() instead.
+        "::findById::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.destroyById() instead.
+        "::destroyById::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.updateById() instead.
+        "::updateById::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang() instead.
+        "::get::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.create() instead.
+        "::create::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.destroyAll() instead.
+        "::delete::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.count() instead.
+        "::count::RencanaPembelian::permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/count",
+          method: "GET",
+        },
       }
     );
 
@@ -3518,6 +6473,150 @@ module.factory(
 
 
 
+        /**
+         * @ngdoc method
+         * @name lbServices.PermintaanBarang#barang
+         * @methodOf lbServices.PermintaanBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::get::PermintaanBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PermintaanBarang#lokasi
+         * @methodOf lbServices.PermintaanBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation lokasi
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Lokasi` object.)
+         * </em>
+         */
+        R.lokasi = function() {
+          var TargetResource = $injector.get("Lokasi");
+          var action = TargetResource["::get::PermintaanBarang::lokasi"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PermintaanBarang#pindahBarang
+         * @methodOf lbServices.PermintaanBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation pindahBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PindahBarang` object.)
+         * </em>
+         */
+        R.pindahBarang = function() {
+          var TargetResource = $injector.get("PindahBarang");
+          var action = TargetResource["::get::PermintaanBarang::pindahBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PermintaanBarang#rencanaPembelian
+         * @methodOf lbServices.PermintaanBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation rencanaPembelian
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `RencanaPembelian` object.)
+         * </em>
+         */
+        R.rencanaPembelian = function() {
+          var TargetResource = $injector.get("RencanaPembelian");
+          var action = TargetResource["::get::PermintaanBarang::rencanaPembelian"];
+          return action.apply(R, arguments);
+        };
+
     /**
     * @ngdoc property
     * @name lbServices.PermintaanBarang#modelName
@@ -3554,6 +6653,61 @@ module.factory(
       urlBase + "/PindahBarangs/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use PindahBarang.barang() instead.
+        "prototype$__get__barang": {
+          url: urlBase + "/PindahBarangs/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.lokasi() instead.
+        "prototype$__get__lokasi": {
+          url: urlBase + "/PindahBarangs/:id/lokasi",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.findById() instead.
+        "prototype$__findById__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.destroyById() instead.
+        "prototype$__destroyById__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.updateById() instead.
+        "prototype$__updateById__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang() instead.
+        "prototype$__get__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.create() instead.
+        "prototype$__create__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.destroyAll() instead.
+        "prototype$__delete__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use PindahBarang.permintaanBarang.count() instead.
+        "prototype$__count__permintaanBarang": {
+          url: urlBase + "/PindahBarangs/:id/permintaanBarang/count",
+          method: "GET",
+        },
 
         /**
          * @ngdoc method
@@ -3895,6 +7049,98 @@ module.factory(
           url: urlBase + "/PindahBarangs/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use Barang.pindahBarang.findById() instead.
+        "::findById::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.destroyById() instead.
+        "::destroyById::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.updateById() instead.
+        "::updateById::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang() instead.
+        "::get::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.create() instead.
+        "::create::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.destroyAll() instead.
+        "::delete::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.pindahBarang.count() instead.
+        "::count::Barang::pindahBarang": {
+          url: urlBase + "/Barangs/:id/pindahBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.findById() instead.
+        "::findById::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.destroyById() instead.
+        "::destroyById::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.updateById() instead.
+        "::updateById::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang() instead.
+        "::get::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.create() instead.
+        "::create::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.destroyAll() instead.
+        "::delete::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Lokasi.pindahBarang.count() instead.
+        "::count::Lokasi::pindahBarang": {
+          url: urlBase + "/Lokasis/:id/pindahBarang/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.pindahBarang() instead.
+        "::get::PermintaanBarang::pindahBarang": {
+          url: urlBase + "/PermintaanBarangs/:id/pindahBarang",
+          method: "GET",
+        },
       }
     );
 
@@ -4022,6 +7268,342 @@ module.factory(
 
 
 
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang#barang
+         * @methodOf lbServices.PindahBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::get::PindahBarang::barang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang#lokasi
+         * @methodOf lbServices.PindahBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation lokasi
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Lokasi` object.)
+         * </em>
+         */
+        R.lokasi = function() {
+          var TargetResource = $injector.get("Lokasi");
+          var action = TargetResource["::get::PindahBarang::lokasi"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.PindahBarang.permintaanBarang
+     * @object
+     * @description
+     *
+     * The object `PindahBarang.permintaanBarang` groups methods
+     * manipulating `PermintaanBarang` instances related to `PindahBarang`.
+     *
+     * Use {@link lbServices.PindahBarang#permintaanBarang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang#permintaanBarang
+         * @methodOf lbServices.PindahBarang
+         *
+         * @description
+         *
+         * Queries permintaanBarang of PindahBarang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::get::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang.permintaanBarang#count
+         * @methodOf lbServices.PindahBarang.permintaanBarang
+         *
+         * @description
+         *
+         * Counts permintaanBarang of PindahBarang.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.permintaanBarang.count = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::count::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang.permintaanBarang#create
+         * @methodOf lbServices.PindahBarang.permintaanBarang
+         *
+         * @description
+         *
+         * Creates a new instance in permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.create = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::create::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang.permintaanBarang#destroyAll
+         * @methodOf lbServices.PindahBarang.permintaanBarang
+         *
+         * @description
+         *
+         * Deletes all permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.permintaanBarang.destroyAll = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::delete::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang.permintaanBarang#destroyById
+         * @methodOf lbServices.PindahBarang.permintaanBarang
+         *
+         * @description
+         *
+         * Delete a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.permintaanBarang.destroyById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::destroyById::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang.permintaanBarang#findById
+         * @methodOf lbServices.PindahBarang.permintaanBarang
+         *
+         * @description
+         *
+         * Find a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.findById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::findById::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang.permintaanBarang#updateById
+         * @methodOf lbServices.PindahBarang.permintaanBarang
+         *
+         * @description
+         *
+         * Update a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.updateById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::updateById::PindahBarang::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
     /**
     * @ngdoc property
     * @name lbServices.PindahBarang#modelName
@@ -4058,6 +7640,55 @@ module.factory(
       urlBase + "/RencanaPembelians/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use RencanaPembelian.barang() instead.
+        "prototype$__get__barang": {
+          url: urlBase + "/RencanaPembelians/:id/barang",
+          method: "GET",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.findById() instead.
+        "prototype$__findById__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.destroyById() instead.
+        "prototype$__destroyById__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.updateById() instead.
+        "prototype$__updateById__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang() instead.
+        "prototype$__get__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.create() instead.
+        "prototype$__create__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang",
+          method: "POST",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.destroyAll() instead.
+        "prototype$__delete__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use RencanaPembelian.permintaanBarang.count() instead.
+        "prototype$__count__permintaanBarang": {
+          url: urlBase + "/RencanaPembelians/:id/permintaanBarang/count",
+          method: "GET",
+        },
 
         /**
          * @ngdoc method
@@ -4399,6 +8030,55 @@ module.factory(
           url: urlBase + "/RencanaPembelians/:id",
           method: "PUT",
         },
+
+        // INTERNAL. Use Barang.rencanaPembelian.findById() instead.
+        "::findById::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/:fk",
+          method: "GET",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.destroyById() instead.
+        "::destroyById::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/:fk",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.updateById() instead.
+        "::updateById::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/:fk",
+          method: "PUT",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian() instead.
+        "::get::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian",
+          method: "GET",
+          isArray: true,
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.create() instead.
+        "::create::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian",
+          method: "POST",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.destroyAll() instead.
+        "::delete::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian",
+          method: "DELETE",
+        },
+
+        // INTERNAL. Use Barang.rencanaPembelian.count() instead.
+        "::count::Barang::rencanaPembelian": {
+          url: urlBase + "/Barangs/:id/rencanaPembelian/count",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PermintaanBarang.rencanaPembelian() instead.
+        "::get::PermintaanBarang::rencanaPembelian": {
+          url: urlBase + "/PermintaanBarangs/:id/rencanaPembelian",
+          method: "GET",
+        },
       }
     );
 
@@ -4525,6 +8205,306 @@ module.factory(
         R["removeById"] = R["deleteById"];
 
 
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian#barang
+         * @methodOf lbServices.RencanaPembelian
+         *
+         * @description
+         *
+         * Fetches belongsTo relation barang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Barang` object.)
+         * </em>
+         */
+        R.barang = function() {
+          var TargetResource = $injector.get("Barang");
+          var action = TargetResource["::get::RencanaPembelian::barang"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name lbServices.RencanaPembelian.permintaanBarang
+     * @object
+     * @description
+     *
+     * The object `RencanaPembelian.permintaanBarang` groups methods
+     * manipulating `PermintaanBarang` instances related to `RencanaPembelian`.
+     *
+     * Use {@link lbServices.RencanaPembelian#permintaanBarang} to query
+     * all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian#permintaanBarang
+         * @methodOf lbServices.RencanaPembelian
+         *
+         * @description
+         *
+         * Queries permintaanBarang of RencanaPembelian.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {Function(Array.<Object>, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::get::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian.permintaanBarang#count
+         * @methodOf lbServices.RencanaPembelian.permintaanBarang
+         *
+         * @description
+         *
+         * Counts permintaanBarang of RencanaPembelian.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.permintaanBarang.count = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::count::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian.permintaanBarang#create
+         * @methodOf lbServices.RencanaPembelian.permintaanBarang
+         *
+         * @description
+         *
+         * Creates a new instance in permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.create = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::create::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian.permintaanBarang#destroyAll
+         * @methodOf lbServices.RencanaPembelian.permintaanBarang
+         *
+         * @description
+         *
+         * Deletes all permintaanBarang of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.permintaanBarang.destroyAll = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::delete::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian.permintaanBarang#destroyById
+         * @methodOf lbServices.RencanaPembelian.permintaanBarang
+         *
+         * @description
+         *
+         * Delete a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        R.permintaanBarang.destroyById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::destroyById::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian.permintaanBarang#findById
+         * @methodOf lbServices.RencanaPembelian.permintaanBarang
+         *
+         * @description
+         *
+         * Find a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.findById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::findById::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.RencanaPembelian.permintaanBarang#updateById
+         * @methodOf lbServices.RencanaPembelian.permintaanBarang
+         *
+         * @description
+         *
+         * Update a related item by id for permintaanBarang
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for permintaanBarang
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PermintaanBarang` object.)
+         * </em>
+         */
+        R.permintaanBarang.updateById = function() {
+          var TargetResource = $injector.get("PermintaanBarang");
+          var action = TargetResource["::updateById::RencanaPembelian::permintaanBarang"];
+          return action.apply(R, arguments);
+        };
 
     /**
     * @ngdoc property
