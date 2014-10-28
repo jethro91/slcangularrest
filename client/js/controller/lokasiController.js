@@ -1,64 +1,35 @@
-App.controller('BarangCtrl', ['$scope', '$state', 'KategoriBarang',
-    function($scope, $state, KategoriBarang) {
+App.controller('LokasiCtrl', ['$scope', '$state',
+    function($scope, $state) {
         // Add Title
         $scope.pages = {
-            title: 'Manage Barang',
+            title: 'Manage Lokasi',
             subtitle: 'Index'
         }
-
-        KategoriBarang.find()
-            .$promise.then(function(res) {
-                $scope.KatBarangs = res;
-
-            }, function(err) {
-                console.log(err.status + ' ' + err.statusText);
-            });
-
-        $scope.filter = {
-            KatBarangs: 0
-        }
-
-
-
-
 
     }
 ])
 
-App.controller('BarangListCtrl', ['$scope', '$state', 'Barang',
-    function($scope, $state, Barang) {
+App.controller('LokasiListCtrl', ['$scope', '$state', 'Lokasi',
+    function($scope, $state, Lokasi) {
         $scope.pages.subtitle = 'List';
+        $scope.listlokasi = [];
 
-
+        // get List
         $scope.getList = function() {
-            // Kosongkan dulu objeknya
-            $scope.listBarang = {};
-
-            var fil = {
-                'filter[include]': 'kategoriBarang'
-            };
-            if ($scope.filter.KatBarangs > 0) {
-                fil['filter[where][idkategoribarang]'] = $scope.filter.KatBarangs;
-            }
-            Barang.find(fil).$promise
-                .then(function(res) {
-                    $scope.listBarang = res;
+            Lokasi.find()
+                .$promise.then(function(res) {
+                    $scope.listLokasi = res;
                 }, function(err) {
                     console.log(err.status + ' ' + err.statusText);
                 });
-        };
+        }
         $scope.getList();
-
-
-
-
         // Detail View
         $scope.detailView = function(selected) {
 
-            Barang
-                .exists(selected)
+            Lokasi.exists(selected)
                 .$promise.then(function(res) {
-                    $state.go('barang.detail', selected);
+                    $state.go('lokasi.detail', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
                     $scope.getList();
@@ -67,10 +38,10 @@ App.controller('BarangListCtrl', ['$scope', '$state', 'Barang',
         }
         // Detail View
         $scope.editView = function(selected) {
-            Barang
+            Lokasi
                 .exists(selected)
                 .$promise.then(function(res) {
-                    $state.go('barang.edit', selected);
+                    $state.go('lokasi.edit', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
                     $scope.getList();
@@ -81,8 +52,8 @@ App.controller('BarangListCtrl', ['$scope', '$state', 'Barang',
         }
         // Remove Event
         $scope.remove = function(selected) {
-            if (confirm('hapus ' + selected.namabarang + ' ?')) {
-                Barang
+            if (confirm('hapus ' + selected.namalokasi + ' ?')) {
+                Lokasi
                     .deleteById(selected)
                     .$promise.then(function() {
                         $scope.getList();
@@ -95,17 +66,17 @@ App.controller('BarangListCtrl', ['$scope', '$state', 'Barang',
     }
 ])
 
-App.controller('BarangCreateCtrl', ['$scope', '$state', 'Barang',
-    function($scope, $state, Barang) {
+App.controller('LokasiCreateCtrl', ['$scope', '$state', 'Lokasi',
+    function($scope, $state, Lokasi) {
         $scope.pages.subtitle = 'Create';
-        $scope.newBarang = {};
+        $scope.newLokasi = {};
         // Create Event
         $scope.create = function() {
-            Barang
-                .create($scope.newBarang)
+            Lokasi
+                .create($scope.newLokasi)
                 .$promise.then(function(res) {
-                    $scope.newBarang = {};
-                    $state.go('barang.list');
+                    $scope.newLokasi = {};
+                    $state.go('lokasi.list');
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
                 });
@@ -115,25 +86,22 @@ App.controller('BarangCreateCtrl', ['$scope', '$state', 'Barang',
     }
 ])
 
-App.controller('BarangDetailCtrl', ['$scope', '$state', '$stateParams', 'Barang',
-    function($scope, $state, $stateParams, Barang) {
+App.controller('LokasiDetailCtrl', ['$scope', '$state', '$stateParams', 'Lokasi',
+    function($scope, $state, $stateParams, Lokasi) {
         $scope.pages.subtitle = 'Detail';
-        var fil = {
-            'filter[where][id]': $stateParams.id,
-            'filter[include]': 'kategoriBarang'
-        };
-        Barang.find(fil).$promise
-            .then(function(res) {
-                $scope.detailBarang = res[0];
+        Lokasi
+            .findById($stateParams)
+            .$promise.then(function(res) {
+                $scope.detailLokasi = res;
             }, function(err) {
                 alert(err.status + ' ' + err.statusText);
             });
         // Detail View
         $scope.editView = function(selected) {
-            Barang
+            Lokasi
                 .exists(selected)
                 .$promise.then(function(res) {
-                    $state.go('barang.edit', selected);
+                    $state.go('lokasi.edit', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
                     $scope.getList();
@@ -145,25 +113,23 @@ App.controller('BarangDetailCtrl', ['$scope', '$state', '$stateParams', 'Barang'
     }
 ])
 
-App.controller('BarangEditCtrl', ['$scope', '$state', '$stateParams', 'Barang',
-    function($scope, $state, $stateParams, Barang) {
+App.controller('LokasiEditCtrl', ['$scope', '$state', '$stateParams', 'Lokasi',
+    function($scope, $state, $stateParams, Lokasi) {
         $scope.pages.subtitle = 'Edit';
-        $scope.editBarang = {};
-
-
-        Barang
+        $scope.editLokasi = {};
+        Lokasi
             .findById($stateParams)
             .$promise.then(function(res) {
-                $scope.editBarang = res;
+                $scope.editLokasi = res;
             }, function(err) {
                 alert(err.status + ' ' + err.statusText);
             });
         $scope.update = function() {
-            Barang
-                .prototype$updateAttributes($scope.editBarang)
+            Lokasi
+                .prototype$updateAttributes($scope.editLokasi)
                 .$promise.then(function(res) {
-                    $scope.editBarang = {};
-                    $state.go('barang.list');
+                    $scope.editLokasi = {};
+                    $state.go('lokasi.list');
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
                 });

@@ -1,7 +1,7 @@
 var App = angular.module('app', [
     'lbServices',
     'generalFactory',
-    'ui.router'
+    'ui.router',
 ]);
 
 // App.run(['$rootScope', '$state', '$stateParams',
@@ -46,6 +46,33 @@ App.config(['$stateProvider', '$urlRouterProvider',
                 templateUrl: "views/kategoriBarang/edit.html",
                 controller: 'KategoriBarangEditCtrl'
             })
+            // Lokasi
+            .state('lokasi', {
+                abstract: true,
+                url: "/lokasi",
+                templateUrl: "views/lokasi/index.html",
+                controller: 'LokasiCtrl'
+            })
+            .state('lokasi.list', {
+                url: "/list",
+                templateUrl: "views/lokasi/list.html",
+                controller: 'LokasiListCtrl'
+            })
+            .state('lokasi.new', {
+                url: "/new",
+                templateUrl: "views/lokasi/new.html",
+                controller: 'LokasiCreateCtrl'
+            })
+            .state('lokasi.detail', {
+                url: "/detail/:id",
+                templateUrl: "views/lokasi/detail.html",
+                controller: 'LokasiDetailCtrl'
+            })
+            .state('lokasi.edit', {
+                url: "/edit/:id",
+                templateUrl: "views/lokasi/edit.html",
+                controller: 'LokasiEditCtrl'
+            })
             // Barang
             .state('barang', {
                 abstract: true,
@@ -72,6 +99,33 @@ App.config(['$stateProvider', '$urlRouterProvider',
                 url: "/edit/:id",
                 templateUrl: "views/barang/edit.html",
                 controller: 'BarangEditCtrl'
+            })
+            // Barang Masuk
+            .state('barangMasuk', {
+                abstract: true,
+                url: "/barang-masuk",
+                templateUrl: "views/barangMasuk/index.html",
+                controller: 'BarangMasukCtrl'
+            })
+            .state('barangMasuk.list', {
+                url: "/list",
+                templateUrl: "views/barangMasuk/list.html",
+                controller: 'BarangMasukListCtrl'
+            })
+            .state('barangMasuk.new', {
+                url: "/new",
+                templateUrl: "views/barangMasuk/new.html",
+                controller: 'BarangMasukCreateCtrl'
+            })
+            .state('barangMasuk.detail', {
+                url: "/detail/:id",
+                templateUrl: "views/barangMasuk/detail.html",
+                controller: 'BarangMasukDetailCtrl'
+            })
+            .state('barangMasuk.edit', {
+                url: "/edit/:id",
+                templateUrl: "views/barangMasuk/edit.html",
+                controller: 'BarangMasukEditCtrl'
             })
     }
 ]);

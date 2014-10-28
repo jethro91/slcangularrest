@@ -12,10 +12,10 @@ App.controller('KategoriBarangCtrl', ['$scope', '$state',
 App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
     function($scope, $state, KategoriBarang) {
         $scope.pages.subtitle = 'List';
-        $scope.listBarang = [];
+        $scope.listKategoriBarang = [];
 
         // get List
-        function getList() {
+        $scope.getList = function() {
             KategoriBarang.find()
                 .$promise.then(function(res) {
                     $scope.listKategoriBarang = res;
@@ -23,7 +23,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
                     console.log(err.status + ' ' + err.statusText);
                 });
         }
-        getList();
+        $scope.getList();
         // Detail View
         $scope.detailView = function(selected) {
 
@@ -32,7 +32,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
                     $state.go('kategoriBarang.detail', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
-                    getList();
+                    $scope.getList();
                 });
 
         }
@@ -44,7 +44,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
                     $state.go('kategoriBarang.edit', selected);
                 }, function(err) {
                     alert(err.status + ' ' + err.statusText);
-                    getList();
+                    $scope.getList();
                 });
 
 
@@ -56,7 +56,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
                 KategoriBarang
                     .deleteById(selected)
                     .$promise.then(function() {
-                        getList();
+                        $scope.getList();
                     });
             } else {
                 return;
@@ -66,7 +66,7 @@ App.controller('KategoriBarangListCtrl', ['$scope', '$state', 'KategoriBarang',
     }
 ])
 
-App.controller('KategoriBarangCreateCtrl', ['$scope', '$state', 'KategoriBarang', 
+App.controller('KategoriBarangCreateCtrl', ['$scope', '$state', 'KategoriBarang',
     function($scope, $state, KategoriBarang) {
         $scope.pages.subtitle = 'Create';
         $scope.newKategoriBarang = {};
@@ -86,7 +86,7 @@ App.controller('KategoriBarangCreateCtrl', ['$scope', '$state', 'KategoriBarang'
     }
 ])
 
-App.controller('KategoriBarangDetailCtrl', ['$scope', '$state', '$stateParams', 'KategoriBarang', 
+App.controller('KategoriBarangDetailCtrl', ['$scope', '$state', '$stateParams', 'KategoriBarang',
     function($scope, $state, $stateParams, KategoriBarang) {
         $scope.pages.subtitle = 'Detail';
         KategoriBarang
@@ -96,7 +96,20 @@ App.controller('KategoriBarangDetailCtrl', ['$scope', '$state', '$stateParams', 
             }, function(err) {
                 alert(err.status + ' ' + err.statusText);
             });
+        // Detail View
+        $scope.editView = function(selected) {
+            KategoriBarang
+                .exists(selected)
+                .$promise.then(function(res) {
+                    $state.go('kategoriBarang.edit', selected);
+                }, function(err) {
+                    alert(err.status + ' ' + err.statusText);
+                    $scope.getList();
+                });
 
+
+
+        }
     }
 ])
 
