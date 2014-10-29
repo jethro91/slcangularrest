@@ -6,16 +6,29 @@ Filter Kategori Barang:
 
 <br>
 <a ui-sref="barang.new">NEW</a>
-<ul>
-    <li ng-repeat="value in listBarang">
-        Id: {{value.id}}
-        <br>Kategori Barang: {{value.kategoriBarang.namakategoribarang}}
-        <br>Nama Barang: {{value.namabarang}}
-        <br>Stock Barang: {{value.stockbarang}}
-        <br>Spec Barang: {{value.specbarang}}
-        <br>Action:
-        <button ng-click="detailView(value)">Detail</button>
-        <button ng-click="editView(value)">Edit</button>
-        <button ng-click="remove(value)">Delete</button>
-    </li>
-</ul>
+<table border="1" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kategori Barang</th>
+            <th>Nama Barang</th>
+            <th>Stock Barang</th>
+            <th>Spec Barang</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="value in listBarang">
+            <td>{{value.id}}</td>
+            <td>{{value.kategoriBarang.namakategoribarang}}</td>
+            <td>{{value.namabarang}}</td>
+            <td>{{value.stockbarang}}</td>
+            <td>{{value.specbarang}}</td>
+            <td>
+                <button ng-click="detailView(value)">Detail</button>
+                <button ng-click="editView(value)">Edit</button>
+                <button ng-click="remove(value)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

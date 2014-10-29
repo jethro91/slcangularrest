@@ -1,0 +1,22 @@
+<ul>
+	<li>
+		id: <input type="text" ng-model="editPindahBarang.id" disabled> <br>
+		Select Barang: 
+		<select ng-model="editPindahBarang.idbarang" ng-options="obj.id as obj.namabarang for obj in Barangs">
+      		<option value="">-- Select Barang --</option>
+    	</select><br>
+    	Dari Lokasi: 
+		<select ng-model="editPindahBarang.iddarilokasi" ng-options="obj.id as obj.namalokasi for obj in Lokasis">
+      		<option value="">-- Select Lokasi --</option>
+    	</select><br>
+    	Ke Lokasi: 
+		<select ng-model="editPindahBarang.idkelokasi" ng-options="obj.id as obj.namalokasi for obj in Lokasis">
+      		<option value="">-- Select Lokasi --</option>
+    	</select><br>
+		Jumlah: <input type="number" ng-model="editPindahBarang.jumlah"><br>
+		Tgl Pindah: <input type="date" ng-model="editPindahBarang.tanggalpindah"><br>
+	</li>
+</ul>
+
+<button ng-click="update()">Update</button>
+<a ui-sref="pindahBarang.list">BACK</a>

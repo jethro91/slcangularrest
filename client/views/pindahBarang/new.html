@@ -1,0 +1,20 @@
+<ul>
+	<li>
+		Select Barang: 
+		<select ng-model="newPindahBarang.idbarang" ng-options="obj.id as obj.namabarang for obj in Barangs">
+      		<option value="">-- Select Barang --</option>
+    	</select><br>
+		Select Dari Lokasi: 
+		<select ng-model="newPindahBarang.iddarilokasi" ng-options="obj.id as obj.namalokasi for obj in Lokasis">
+      		<option value="">-- Select Dari --</option>
+    	</select><br>
+    	Select Ke Lokasi: 
+    	<select ng-model="newPindahBarang.idkelokasi" ng-options="obj.id as obj.namalokasi for obj in Lokasis">
+      		<option value="">-- Select Ke --</option>
+    	</select><br>
+		Jumlah : <input type="number" ng-model="newPindahBarang.jumlah"><br>
+		Tgl Pindah: <input type="date" ng-model="newPindahBarang.tanggalpindah"><br>
+	</li>
+</ul>
+<button ng-click="create()">Create</button>
+<a ui-sref="pindahBarang.list">BACK</a>

@@ -1,0 +1,20 @@
+<ul>
+	<li>
+		Barang Yang Diminta: 
+		<select ng-model="newPermintaanBarang.idbarang" ng-options="obj.id as obj.namabarang for obj in Barangs">
+      		<option value="">-- Select Barang --</option>
+    	</select><br>
+		Lokasi Peminta: 
+		<select ng-model="newPermintaanBarang.idlokasi" ng-options="obj.id as obj.namalokasi for obj in Lokasis">
+      		<option value="">-- Select Lokasi --</option>
+    	</select><br>
+		Jumlah Permintaan: <input type="number" ng-model="newPermintaanBarang.jlhpermintaan"><br>
+		Tgl Permintaan: <input type="date" ng-model="newPermintaanBarang.tglpermintaan"><br>
+		Status: <input type="number" ng-model="newPermintaanBarang.status"><br>
+		id Pindah Barang: <input type="number" ng-model="newPermintaanBarang.idpindahbarang"><br>
+		Jumlah Distribusi: <input type="number" ng-model="newPermintaanBarang.jlhdistribusi"><br>
+		id Rencana Pembelian: <input type="number" ng-model="newPermintaanBarang.idrencanapembelian"><br>
+	</li>
+</ul>
+<button ng-click="create()">Create</button>
+<a ui-sref="permintaanBarang.list">BACK</a>

@@ -1,0 +1,11 @@
+<ul>
+	<li>
+		id: <input type="text" ng-model="detailPermintaanBarang.id" disabled> <br>
+		Nama Barang: <input type="text" ng-model="detailPermintaanBarang.barang.namabarang" disabled> <br>
+    	Nama Lokasi: <input type="text" ng-model="detailPermintaanBarang.lokasi.namalokasi"  disabled><br>
+		Jumlah Barang Masuk: <input type="number" ng-model="detailPermintaanBarang.jlhPermintaanBarang" disabled><br>
+		Tgl Masuk: <input type="date" ng-model="detailPermintaanBarang.tglmasuk" disabled><br>
+	</li>
+</ul>
+<button ng-click="editView(detailPermintaanBarang)">Edit</button>
+<a ui-sref="permintaanBarang.list">BACK</a>

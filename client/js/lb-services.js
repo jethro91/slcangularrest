@@ -4849,9 +4849,15 @@ module.factory(
           method: "GET",
         },
 
-        // INTERNAL. Use PindahBarang.lokasi() instead.
-        "::get::PindahBarang::lokasi": {
-          url: urlBase + "/PindahBarangs/:id/lokasi",
+        // INTERNAL. Use PindahBarang.dariLokasi() instead.
+        "::get::PindahBarang::dariLokasi": {
+          url: urlBase + "/PindahBarangs/:id/dariLokasi",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.keLokasi() instead.
+        "::get::PindahBarang::keLokasi": {
+          url: urlBase + "/PindahBarangs/:id/keLokasi",
           method: "GET",
         },
       }
@@ -6660,9 +6666,15 @@ module.factory(
           method: "GET",
         },
 
-        // INTERNAL. Use PindahBarang.lokasi() instead.
-        "prototype$__get__lokasi": {
-          url: urlBase + "/PindahBarangs/:id/lokasi",
+        // INTERNAL. Use PindahBarang.dariLokasi() instead.
+        "prototype$__get__dariLokasi": {
+          url: urlBase + "/PindahBarangs/:id/dariLokasi",
+          method: "GET",
+        },
+
+        // INTERNAL. Use PindahBarang.keLokasi() instead.
+        "prototype$__get__keLokasi": {
+          url: urlBase + "/PindahBarangs/:id/keLokasi",
           method: "GET",
         },
 
@@ -7306,12 +7318,12 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name lbServices.PindahBarang#lokasi
+         * @name lbServices.PindahBarang#dariLokasi
          * @methodOf lbServices.PindahBarang
          *
          * @description
          *
-         * Fetches belongsTo relation lokasi
+         * Fetches belongsTo relation dariLokasi
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -7334,9 +7346,45 @@ module.factory(
          * This usually means the response is a `Lokasi` object.)
          * </em>
          */
-        R.lokasi = function() {
+        R.dariLokasi = function() {
           var TargetResource = $injector.get("Lokasi");
-          var action = TargetResource["::get::PindahBarang::lokasi"];
+          var action = TargetResource["::get::PindahBarang::dariLokasi"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.PindahBarang#keLokasi
+         * @methodOf lbServices.PindahBarang
+         *
+         * @description
+         *
+         * Fetches belongsTo relation keLokasi
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {Function(Object, Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {Function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @return {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Lokasi` object.)
+         * </em>
+         */
+        R.keLokasi = function() {
+          var TargetResource = $injector.get("Lokasi");
+          var action = TargetResource["::get::PindahBarang::keLokasi"];
           return action.apply(R, arguments);
         };
     /**

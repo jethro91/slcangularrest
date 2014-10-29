@@ -1,43 +1,50 @@
 {
-  "name": "KategoriBarang",
-  "options": {
-    "idInjection": false,
-    "mysql": {
-      "schema": "einventory",
-      "table": "kategori_barang"
-    }
-  },
-  "properties": {
-    "id": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "id": 1,
-      "mysql": {
-        "columnName": "id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
+    "name": "KategoriBarang",
+    "options": {
+        "idInjection": false,
+        "relations": {
+            "barang": {
+                "type": "hasMany",
+                "model": "Barang",
+                "foreignKey": "idkategoribarang"
+            }
+        },
+        "mysql": {
+            "schema": "einventory",
+            "table": "kategori_barang"
+        }
     },
-    "namakategoribarang": {
-      "type": "String",
-      "required": false,
-      "length": 120,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "namaKategoriBarang",
-        "dataType": "varchar",
-        "dataLength": 120,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
+    "properties": {
+        "id": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "id": 1,
+            "mysql": {
+                "columnName": "id",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        },
+        "namakategoribarang": {
+            "type": "String",
+            "required": false,
+            "length": 120,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "namaKategoriBarang",
+                "dataType": "varchar",
+                "dataLength": 120,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "NO"
+            }
+        }
     }
-  }
 }

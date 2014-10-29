@@ -1,88 +1,115 @@
 {
-  "name": "Barang",
-  "options": {
-    "idInjection": false,
-    "mysql": {
-      "schema": "einventory",
-      "table": "barang"
+    "name": "Barang",
+    "options": {
+        "idInjection": false,
+        "relations": {
+            "kategoriBarang": {
+                "type": "belongsTo",
+                "model": "KategoriBarang",
+                "foreignKey": "idkategoribarang"
+            },
+            "barangMasuk": {
+                "type": "hasMany",
+                "model": "BarangMasuk",
+                "foreignKey": "idbarang"
+            },
+            "permintaanBarang": {
+                "type": "hasMany",
+                "model": "PermintaanBarang",
+                "foreignKey": "idbarang"
+            },
+            "rencanaPembelian": {
+                "type": "hasMany",
+                "model": "RencanaPembelian",
+                "foreignKey": "idbarang"
+            },
+            "pindahBarang": {
+                "type": "hasMany",
+                "model": "PindahBarang",
+                "foreignKey": "idbarang"
+            }
+        },
+        "mysql": {
+            "schema": "einventory",
+            "table": "barang"
+        }
+    },
+    "properties": {
+        "id": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "id": 1,
+            "mysql": {
+                "columnName": "id",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        },
+        "idkategoribarang": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+                "columnName": "idKategoriBarang",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        },
+        "namabarang": {
+            "type": "String",
+            "required": false,
+            "length": 3072,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "namaBarang",
+                "dataType": "varchar",
+                "dataLength": 3072,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "NO"
+            }
+        },
+        "stockbarang": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+                "columnName": "stockBarang",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "YES"
+            }
+        },
+        "specbarang": {
+            "type": "String",
+            "required": false,
+            "length": 3072,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "specBarang",
+                "dataType": "varchar",
+                "dataLength": 3072,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "YES"
+            }
+        }
     }
-  },
-  "properties": {
-    "id": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "id": 1,
-      "mysql": {
-        "columnName": "id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idkategoribarang": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "idKategoriBarang",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "namabarang": {
-      "type": "String",
-      "required": false,
-      "length": 3072,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "namaBarang",
-        "dataType": "varchar",
-        "dataLength": 3072,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "stockbarang": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "stockBarang",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "YES"
-      }
-    },
-    "specbarang": {
-      "type": "String",
-      "required": false,
-      "length": 3072,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "specBarang",
-        "dataType": "varchar",
-        "dataLength": 3072,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      }
-    }
-  }
 }

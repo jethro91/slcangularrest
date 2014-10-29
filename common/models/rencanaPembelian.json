@@ -1,88 +1,100 @@
 {
-  "name": "RencanaPembelian",
-  "options": {
-    "idInjection": false,
-    "mysql": {
-      "schema": "einventory",
-      "table": "rencana_pembelian"
+    "name": "RencanaPembelian",
+    "options": {
+        "idInjection": false,
+        "relations": {
+            "barang": {
+                "type": "belongsTo",
+                "model": "Barang",
+                "foreignKey": "idbarang"
+            },
+            "permintaanBarang": {
+                "type": "hasMany",
+                "model": "PermintaanBarang",
+                "foreignKey": "idrencanapembelian"
+            }
+        },
+        "mysql": {
+            "schema": "einventory",
+            "table": "rencana_pembelian"
+        }
+    },
+    "properties": {
+        "id": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "id": 1,
+            "mysql": {
+                "columnName": "id",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        },
+        "idbarang": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+                "columnName": "idBarang",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        },
+        "jumlah": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+                "columnName": "jumlah",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        },
+        "keterangan": {
+            "type": "String",
+            "required": false,
+            "length": 3072,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "keterangan",
+                "dataType": "varchar",
+                "dataLength": 3072,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "YES"
+            }
+        },
+        "status": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+                "columnName": "status",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 10,
+                "dataScale": 0,
+                "nullable": "NO"
+            }
+        }
     }
-  },
-  "properties": {
-    "id": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "id": 1,
-      "mysql": {
-        "columnName": "id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idbarang": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "idBarang",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "jumlah": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "jumlah",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "keterangan": {
-      "type": "String",
-      "required": false,
-      "length": 3072,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "keterangan",
-        "dataType": "varchar",
-        "dataLength": 3072,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      }
-    },
-    "status": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "status",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    }
-  }
 }

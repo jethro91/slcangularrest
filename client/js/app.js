@@ -127,5 +127,86 @@ App.config(['$stateProvider', '$urlRouterProvider',
                 templateUrl: "views/barangMasuk/edit.html",
                 controller: 'BarangMasukEditCtrl'
             })
+            // Permintaan Barang
+            .state('permintaanBarang', {
+                abstract: true,
+                url: "/permintaan-barang",
+                templateUrl: "views/permintaanBarang/index.html",
+                controller: 'PermintaanBarangCtrl'
+            })
+            .state('permintaanBarang.list', {
+                url: "/list",
+                templateUrl: "views/permintaanBarang/list.html",
+                controller: 'PermintaanBarangListCtrl'
+            })
+            .state('permintaanBarang.new', {
+                url: "/new",
+                templateUrl: "views/permintaanBarang/new.html",
+                controller: 'PermintaanBarangCreateCtrl'
+            })
+            .state('permintaanBarang.detail', {
+                url: "/detail/:id",
+                templateUrl: "views/permintaanBarang/detail.html",
+                controller: 'PermintaanBarangDetailCtrl'
+            })
+            .state('permintaanBarang.edit', {
+                url: "/edit/:id",
+                templateUrl: "views/permintaanBarang/edit.html",
+                controller: 'PermintaanBarangEditCtrl'
+            })
+            // Pindah Barang
+            .state('pindahBarang', {
+                abstract: true,
+                url: "/pindah-barang",
+                templateUrl: "views/pindahBarang/index.html",
+                controller: 'PindahBarangCtrl'
+            })
+            .state('pindahBarang.list', {
+                url: "/list",
+                templateUrl: "views/pindahBarang/list.html",
+                controller: 'PindahBarangListCtrl'
+            })
+            .state('pindahBarang.new', {
+                url: "/new",
+                templateUrl: "views/pindahBarang/new.html",
+                controller: 'PindahBarangCreateCtrl'
+            })
+            .state('pindahBarang.detail', {
+                url: "/detail/:id",
+                templateUrl: "views/pindahBarang/detail.html",
+                controller: 'PindahBarangDetailCtrl'
+            })
+            .state('pindahBarang.edit', {
+                url: "/edit/:id",
+                templateUrl: "views/pindahBarang/edit.html",
+                controller: 'PindahBarangEditCtrl'
+            })
+            // Rencana Pembelian
+            .state('rencanaPembelian', {
+                abstract: true,
+                url: "/rencana-pembelian",
+                templateUrl: "views/rencanaPembelian/index.html",
+                controller: 'RencanaPembelianCtrl'
+            })
+            .state('rencanaPembelian.list', {
+                url: "/list",
+                templateUrl: "views/rencanaPembelian/list.html",
+                controller: 'RencanaPembelianListCtrl'
+            })
+            .state('rencanaPembelian.new', {
+                url: "/new",
+                templateUrl: "views/rencanaPembelian/new.html",
+                controller: 'RencanaPembelianCreateCtrl'
+            })
+            .state('rencanaPembelian.detail', {
+                url: "/detail/:id",
+                templateUrl: "views/rencanaPembelian/detail.html",
+                controller: 'RencanaPembelianDetailCtrl'
+            })
+            .state('rencanaPembelian.edit', {
+                url: "/edit/:id",
+                templateUrl: "views/rencanaPembelian/edit.html",
+                controller: 'RencanaPembelianEditCtrl'
+            })
     }
 ]);

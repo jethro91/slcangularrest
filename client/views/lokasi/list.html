@@ -1,12 +1,23 @@
-	<br>
-	<a ui-sref="lokasi.new">NEW</a>
-	<ul>
-		<li ng-repeat="value in listLokasi">
-			Id: {{value.id}} <br>
-			Nama Kategori Barang: {{value.namalokasi}} <br>
-			Action: 
-			<button ng-click="detailView(value)">Detail</button>
-			<button ng-click="editView(value)">Edit</button>
-			<button ng-click="remove(value)">Delete</button>
-		</li>
-	</ul>
+<br>
+<a ui-sref="lokasi.new">NEW</a>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nama Kategori Barang</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="value in listLokasi">
+            <td>{{value.id}}</td>
+            <td>{{value.namalokasi}}</td>
+            <td>
+                <button ng-click="detailView(value)">Detail</button>
+                <button ng-click="editView(value)">Edit</button>
+                <button ng-click="remove(value)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

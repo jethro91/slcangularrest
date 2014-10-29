@@ -1,0 +1,12 @@
+<ul>
+	<li>
+		id: <input type="text" ng-model="detailRencanaPembelian.id" disabled> <br>
+		Nama Barang: <input type="text" ng-model="detailRencanaPembelian.barang.namabarang" disabled> <br>
+		Jumlah: <input type="number" ng-model="detailRencanaPembelian.jumlah" disabled><br>
+		Keterangan: <input type="string" ng-model="detailRencanaPembelian.keterangan" disabled><br>
+		Status: <input type="number" ng-model="detailRencanaPembelian.status" disabled><br>
+		
+	</li>
+</ul>
+<button ng-click="editView(detailRencanaPembelian)">Edit</button>
+<a ui-sref="rencanaPembelian.list">BACK</a>

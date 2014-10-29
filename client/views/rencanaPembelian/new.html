@@ -1,0 +1,13 @@
+<ul>
+	<li>
+		Select Barang: 
+		<select ng-model="newRencanaPembelian.idbarang" ng-options="obj.id as obj.namabarang for obj in Barangs">
+      		<option value="">-- Select Barang --</option>
+    	</select><br>
+		Jumlah: <input type="number" ng-model="newRencanaPembelian.jumlah"><br>
+		Keterangan: <input type="text" ng-model="newRencanaPembelian.keterangan"><br>
+		Status: <input type="number" ng-model="newRencanaPembelian.status"><br>
+	</li>
+</ul>
+<button ng-click="create()">Create</button>
+<a ui-sref="rencanaPembelian.list">BACK</a>

@@ -1,0 +1,16 @@
+<ul>
+	<li>
+		id: <input type="text" ng-model="editBarangMasuk.id" disabled> <br>
+		Select Barang: 
+		<select ng-model="editBarangMasuk.idbarang" ng-options="obj.id as obj.namabarang for obj in Barangs">
+      		<option value="">-- Select Barang --</option>
+    	</select><br>
+		Jumlah: <input type="number" ng-model="editRencanaPembelian.jumlah"><br>
+		Keterangan: <input type="string" ng-model="editRencanaPembelian.keterangan"><br>
+		Status: <input type="number" ng-model="editRencanaPembelian.status"><br>
+
+	</li>
+</ul>
+
+<button ng-click="update()">Update</button>
+<a ui-sref="rencanaPembelian.list">BACK</a>

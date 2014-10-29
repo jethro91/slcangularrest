@@ -1,0 +1,45 @@
+Filter Barang:
+<select ng-model="filter.Barangs" ng-options="obj.id as obj.namabarang for obj in Barangs">
+    <option value="">-- ALL --</option>
+</select>
+
+<button ng-click="getList()">FILTER</button>
+<br>
+
+<a ui-sref="rencanaPembelian.new">NEW</a>
+<table style="width:100%;" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nama Barang</th>
+            <th>Kategori Barang</th>
+            <th>Stock Barang</th>
+            <th>Spec Barang</th>
+           
+            <th>Jumlah</th>
+            <th>Keterangan</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="value in listRencanaPembelian">
+            <td>{{value.id}}</td>
+            <td>{{value.barang.namabarang}}</td>
+            <td>{{getNamaKatBarang(value.barang.idkategoribarang)}}</td>
+            <td>{{value.barang.stockbarang}}</td>
+            <td>{{value.barang.specbarang}}</td>
+         
+            <td>{{value.jumlah}}</td>
+            <td>{{value.keterangan}}</td>
+            <td>{{value.status}}</td>
+            <td>
+                <button ng-click="detailView(value)">Detail</button>
+                <button ng-click="editView(value)">Edit</button>
+                <button ng-click="remove(value)">Delete</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
